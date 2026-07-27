@@ -1,5 +1,55 @@
+/* used font_format.html */
 .f_family1{
     color:blue;
     font-family:Arial, Helvetica, sans-serif;
     font-size: medium;
+}
+
+/* shadows.html */
+/* shadow only word */
+.t_shadow_bhagavi{
+    font-size:60px;
+    color:blueviolet;
+    text-align: center;
+    text-shadow:5px 7px 8px red;
+}
+/* shadow for image */
+.b_shadow{
+    box-shadow: 8px 0px 6px #ff00a2;
+}
+.b_shadow1{
+    box-shadow: 5px 8px 9px red;
+}
+.b_shadow2{
+    box-shadow: 9px 8px 11px #4c00ff;
+}
+.d_shadow{
+    filter:drop-shadow(4px 7px 9px grey);
+}
+.d_shadow{
+    filter:drop-shadow(8px 6px 9px rgb(255, 98, 0));
+}
+
+/* border_properties.html */
+/* solid */
+.b_properties{
+    border:10px groove rgb(0, 139, 21);
+}
+.b_properties1{
+    border:10px groove rgb(0, 139, 21);
+    border-top-color:darkmagenta;
+    border-left-color: yellow;
+    border-bottom-color: darkmagenta;
+    border-right-color: yellow;
+    
+}
+
+.b_properties2{
+    border:8px solid green;
+    /* border-radius:30px; */
+    /* border: top left radius 10px;;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px; */
+    border: radius 50%;
+    
 }
