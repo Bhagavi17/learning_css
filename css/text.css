@@ -1,0 +1,59 @@
+.t_transform_uppercase{
+    text-transform:uppercase;
+}
+.t_transform_lowercase{
+    text-transform:lowercase;
+}
+.t_transform_capitalize{
+    text-transform:capitalize;
+}
+.t_d_overline{
+    text-decoration:overline;
+}
+.t_d_underline{
+    text-decoration:underline;
+}
+.t_d_lineThrough{
+    text-decoration:line-through;
+}
+/* bhagavi decor with all above */
+.t_decor{
+    text-decoration:line-through underline overline;
+}
+/* shadow */
+.t_shadow1{
+    color:rgb(17, 0, 255);
+    font: size 40px;
+    text-shadow: 15px 4px 5px red;
+    /* first value: horizontal, second : vertical ,third:blur */
+}
+.t_shadow2{
+    color:brown;
+    font-size:60px;
+    text-shadow: 4px 5px 6px rgb(55, 47, 47) ; ;
+
+}
+.t_indent
+{
+    color:blue;
+    text-indent:180px;
+    background-color: yellowgreen;
+}
+.t_line_height
+{
+    line-height:30px;
+}
+.t_letter_space
+{
+    letter-spacing: 13px;
+
+}
+.t_word_space{
+    word-spacing:normal;
+}
+.t_align{
+    color:red;
+    font-size:60px;
+    background-color: bisque;
+    text-align: center;
+}
