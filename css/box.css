@@ -1,0 +1,46 @@
+/* box model.html */
+.box_model{
+    border:4px groove red;
+    padding: 4px;
+    margin:80px;
+}
+.box_model1{
+    border:2px solid blue;
+    border-radius: 30px;
+    padding: 60px 20px 60px 50px ;
+    margin-top: 20px 60px 80px 60px;
+
+}
+
+/* positions.html */
+.box{
+    border:2px dashed red;
+    padding:30px;
+    background-color:aqua;
+    width:200px;
+    height:150px;
+    margin-bottom: 20px;
+}
+.box1{
+    position:static;
+}
+.box2{
+    position:relative;
+    left:300px;
+}
+.box3{
+    position:absolute;
+    left:400px;
+    top:10px;
+}
+.box4{
+    position:sticky;
+    top:0;
+}
+.box5{
+    position:fixed;
+    bottom:0px;
+    right:10px;
+}
+
+
