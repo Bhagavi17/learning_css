@@ -1,0 +1,15 @@
+.bgImage {
+    /* background-color: black; */
+    background-image: url("../images/india.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.heading_1 {
+    color: violet;
+    font-size: 70px;
+    text-align: center;
+    padding: 40px;
+}
