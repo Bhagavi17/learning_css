@@ -5,58 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <style>
-        #s_animation{
-            border-radius: 50%;
-            width:160px;
-            height:160px;
-            background-color:yellow;
+
+        .body_animation{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: 100vh;
+            position:relative; /* it's moving the flex */
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;}/* on top starting */
+
+        /* its for creating blur background */
+             .background{
+              position:absolute;
+              width:100%;
+              height:100%;
+              background:url("../images/pexels.jpg") no-repeat center center/cover;
+              filter:blur(8px); 
+}
+ #s_animation{
+
+            width:360px;
+            height:360px;
+            background-image:url(../images/krish.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:top;
             position:relative;
-            border:2px solid;
-            border-color: black;
-            /* it's used in when used in os system like iphone  */
-            -webkit-animation-name: movingBox;
-            /* animation name */
+            align-items:baseline;
+
+            border:10px solid;
+            border-image:linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+
+            -webkit-animation-name:movingBox;
             animation-name:movingBox;
-            /* timing */
             animation-duration:10s;
-            /* count how many times they rotate*/
-            animation-iteration-count: 2;
-            /* animation-direction- clock-wise, anticlock-wise */
-            animation-direction: alternate;
-            /* when they started */
-            animation-delay: 5s;
-            
-            }
-        #s1_animation{
-             border-radius: 25%;
-            width:160px;
-            height:160px;
-            background-color:yellow;
-            position:relative;
-            border:2px solid;
-            border-color: black;
+            animation-iteration-count:infinite;
+            animation-direction:alternate;
+            animation-delay:5s;
+        }
 
-            -webkit-animation-name: movingBox;
-             animation-name:movingBox;
-             animation-duration:10s;
-             animation-iteration-count: 2;
-             animation-direction: alternate;
-             animation-delay: 5s;
-
+        @keyframes movingBox{
+            0%{background-image:url(../images/OIP1.jpg);left:0px;top:0px;
             }
-             @keyframes movingBox{
-            0%{background-color:yellow;left:0px;top:0px;}
-            25%{background-color:red;left:300px;top:0px;}
-            50%{background-color:blue;left:300px;top:300px;}
-           75% {background-color:green;left:0px;top:300px;}
-           100% {background-color:darkmagenta;left:0px;top:0px;}
-           /* backround image used here */
+            25%{background-image:url(../images/OIP1.jpg);left:300px;top:0px;
+            }
+            50%{background-image:url(../images/god.jpg); left:300px;top:300px;
+            }
+            75%{background-image:url(../images/OIP4.webp);left:0px;top:300px;
+            }
+            100%{ background-image:url(../images/OIP.jpg);left:0px;top:0px;
+            }
         }
     </style>
 </head>
-<body>
-    
+<div class="background"></div>
+<body class="body_animation">
+
     <div id="s_animation"></div>
     <div id="s1_animation"></div>
+
 </body>
 </html>
