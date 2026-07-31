@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #s_animation{
+            border-radius: 50%;
+            width:160px;
+            height:160px;
+            background-color:yellow;
+            position:relative;
+            border:2px solid;
+            border-color: black;
+            /* it's used in when used in os system like iphone  */
+            -webkit-animation-name: movingBox;
+            /* animation name */
+            animation-name:movingBox;
+            /* timing */
+            animation-duration:10s;
+            /* count how many times they rotate*/
+            animation-iteration-count: 2;
+            /* animation-direction- clock-wise, anticlock-wise */
+            animation-direction: alternate;
+            /* when they started */
+            animation-delay: 5s;
+            
+            }
+        #s1_animation{
+             border-radius: 25%;
+            width:160px;
+            height:160px;
+            background-color:yellow;
+            position:relative;
+            border:2px solid;
+            border-color: black;
+
+            -webkit-animation-name: movingBox;
+             animation-name:movingBox;
+             animation-duration:10s;
+             animation-iteration-count: 2;
+             animation-direction: alternate;
+             animation-delay: 5s;
+
+            }
+             @keyframes movingBox{
+            0%{background-color:yellow;left:0px;top:0px;}
+            25%{background-color:red;left:300px;top:0px;}
+            50%{background-color:blue;left:300px;top:300px;}
+           75% {background-color:green;left:0px;top:300px;}
+           100% {background-color:darkmagenta;left:0px;top:0px;}
+           /* backround image used here */
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="s_animation"></div>
+    <div id="s1_animation"></div>
+</body>
+</html>
