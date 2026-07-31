@@ -6,7 +6,7 @@
     <title>Animation</title>
     <style>
 
-        .body_animation{
+              .body_animation{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top;
@@ -34,10 +34,10 @@
             background-position:top;
             position:relative;
             align-items:baseline;
-
+             
             border:10px solid;
-            border-image:linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
-
+            border-image:linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+          /* its used for os system */
             -webkit-animation-name:movingBox;
             animation-name:movingBox;
             animation-duration:10s;
@@ -45,7 +45,7 @@
             animation-direction:alternate;
             animation-delay:5s;
         }
-
+/* animation */
         @keyframes movingBox{
             0%{background-image:url(../images/OIP1.jpg);left:0px;top:0px;
             }
@@ -60,9 +60,10 @@
         }
     </style>
 </head>
+<!-- using class selector -->
 <div class="background"></div>
 <body class="body_animation">
-
+<!-- using id selector -->
     <div id="s_animation"></div>
     <div id="s1_animation"></div>
 
